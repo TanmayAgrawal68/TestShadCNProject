@@ -11,7 +11,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Link, Loader2, MountainIcon } from "lucide-react";
+import { Loader2, MountainIcon } from "lucide-react";
 
 export function LandingPage() {
   const [idea, setIdea] = useState("");
@@ -37,29 +37,29 @@ export function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link className="flex items-center justify-center" href="#">
+        <a className="flex items-center justify-center" href="#">
           <MountainIcon className="h-6 w-6" />
           <span className="sr-only">Acme Inc</span>
-        </Link>
+        </a>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link
+          <a
             className="text-sm font-medium hover:underline underline-offset-4"
             href="#features"
           >
             Features
-          </Link>
-          <Link
+          </a>
+          <a
             className="text-sm font-medium hover:underline underline-offset-4"
             href="#pricing"
           >
             Pricing
-          </Link>
-          <Link
+          </a>
+          <a
             className="text-sm font-medium hover:underline underline-offset-4"
             href="#testimonials"
           >
             Testimonials
-          </Link>
+          </a>
         </nav>
         <Button className="ml-4" variant="outline">
           Log in
@@ -267,12 +267,12 @@ export function LandingPage() {
           © 2023 AI Startup Planner. All rights reserved.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
+          <a className="text-xs hover:underline underline-offset-4" href="#">
             Terms of Service
-          </Link>
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
+          </a>
+          <a className="text-xs hover:underline underline-offset-4" href="#">
             Privacy
-          </Link>
+          </a>
         </nav>
       </footer>
     </div>
